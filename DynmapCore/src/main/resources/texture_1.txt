@@ -10,6 +10,12 @@ texturefile:id=chest,filename=assets/minecraft/textures/entity/chest/normal.png,
 texturefile:id=enderchest,filename=assets/minecraft/textures/entity/chest/ender.png,format=CHEST
 texturefile:id=bigchest,filename=assets/minecraft/textures/entity/chest/normal_double.png,format=BIGCHEST
 texturefile:id=sign,filename=assets/minecraft/textures/entity/sign.png,format=SIGN
+texturefile:id=oak_sign,filename=assets/minecraft/textures/entity/signs/oak.png,format=SIGN
+texturefile:id=birch_sign,filename=assets/minecraft/textures/entity/signs/birch.png,format=SIGN
+texturefile:id=spruce_sign,filename=assets/minecraft/textures/entity/signs/spruce.png,format=SIGN
+texturefile:id=acacia_sign,filename=assets/minecraft/textures/entity/signs/acacia.png,format=SIGN
+texturefile:id=jungle_sign,filename=assets/minecraft/textures/entity/signs/jungle.png,format=SIGN
+texturefile:id=dark_oak_sign,filename=assets/minecraft/textures/entity/signs/dark_oak.png,format=SIGN
 texturefile:id=skeleton,filename=assets/minecraft/textures/entity/skeleton/skeleton.png,format=SKIN
 texturefile:id=zombie,filename=assets/minecraft/textures/entity/zombie/zombie.png,format=SKIN
 texturefile:id=char,filename=assets/minecraft/textures/entity/steve.png,format=SKIN
@@ -985,8 +991,6 @@ block:id=furnace,data=2,top=0:furnace_top,west=0:furnace_front_on,south=0:furnac
 block:id=furnace,data=4,top=0:furnace_top,north=0:furnace_front_on,south=0:furnace_side,east=0:furnace_side,west=0:furnace_side,bottom=0:furnace_top,stdrot=true
 # Burning Furnace (facing south)
 block:id=furnace,data=6,top=0:furnace_top,south=0:furnace_front_on,north=0:furnace_side,east=0:furnace_side,west=0:furnace_side,bottom=0:furnace_top,stdrot=true
-# Signpost
-block:id=sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=sign
 # Oak Door
 block:id=oak_door,data=*,patch0=0:oak_door_top,patch1=0:oak_door_bottom,transparency=TRANSPARENT
 # Ladder
@@ -1008,8 +1012,6 @@ block:id=rail,data=2,data=3,patch0=0:rail,transparency=TRANSPARENT
 block:id=rail,data=6,data=7,data=8,data=9,patch0=0:rail_corner,transparency=TRANSPARENT
 # Cobblestone Stairs
 block:id=cobblestone_stairs,patch0-2=0:cobblestone,transparency=SEMITRANSPARENT
-# Wall sign
-block:id=wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=sign
 # Lever
 block:id=lever,patch0-4=0:cobblestone,patch5-8=0:lever,transparency=TRANSPARENT
 # Stone pressure plate
@@ -2156,3 +2158,249 @@ block:id=horn_coral,patch0-1=0:horn_coral,transparency=TRANSPARENT
 
 # Dead horn coral
 [1.13.1-]block:id=dead_horn_coral,patch0-1=0:dead_horn_coral,transparency=TRANSPARENT
+
+# Signpost
+[-1.13.2]block:id=sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=sign
+# Wall sign
+[-1.13.2]block:id=wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=sign
+
+
+[1.14-]texture:id=cornflower
+[1.14-]texture:id=wither_rose
+[1.14-]texture:id=lily_of_the_valley
+[1.14-]texture:id=smooth_stone_slab_side
+[1.14-]texture:id=smooth_stone
+[1.14-]texture:id=bamboo_stage0
+[1.14-]texture:id=bamboo_stalk
+[1.14-]texture:id=scaffolding_top
+[1.14-]texture:id=scaffolding_side
+[1.14-]texture:id=scaffolding_bottom
+[1.14-]texture:id=composter_top
+[1.14-]texture:id=composter_side
+[1.14-]texture:id=composter_bottom
+[1.14-]texture:id=jigsaw_bottom
+[1.14-]texture:id=jigsaw_side
+[1.14-]texture:id=jigsaw_top
+[1.14-]texture:id=loom_bottom
+[1.14-]texture:id=loom_side
+[1.14-]texture:id=loom_top
+[1.14-]texture:id=loom_front
+[1.14-]texture:id=barrel_bottom
+[1.14-]texture:id=barrel_side
+[1.14-]texture:id=barrel_top
+[1.14-]texture:id=barrel_top_open
+[1.14-]texture:id=smoker_bottom
+[1.14-]texture:id=smoker_side
+[1.14-]texture:id=smoker_top
+[1.14-]texture:id=smoker_front_on
+[1.14-]texture:id=smoker_front
+[1.14-]texture:id=blast_furnace_side
+[1.14-]texture:id=blast_furnace_top
+[1.14-]texture:id=blast_furnace_front_on
+[1.14-]texture:id=blast_furnace_front
+[1.14-]texture:id=cartography_table_top
+[1.14-]texture:id=cartography_table_side1
+[1.14-]texture:id=cartography_table_side2
+[1.14-]texture:id=cartography_table_side3
+[1.14-]texture:id=fletching_table_top
+[1.14-]texture:id=fletching_table_front
+[1.14-]texture:id=fletching_table_side
+[1.14-]texture:id=sweet_berry_bush_stage0
+[1.14-]texture:id=sweet_berry_bush_stage1
+[1.14-]texture:id=sweet_berry_bush_stage2
+[1.14-]texture:id=sweet_berry_bush_stage3
+[1.14-]texture:id=grindstone_pivot
+[1.14-]texture:id=grindstone_round
+[1.14-]texture:id=grindstone_side
+[1.14-]texture:id=lectern_base
+[1.14-]texture:id=lectern_front
+[1.14-]texture:id=lectern_sides
+[1.14-]texture:id=lectern_top
+[1.14-]texturefile:id=lantern,filename=assets/minecraft/textures/block/lantern.png,format=CUSTOM,tile0=0:0/6:10/5:3,xcount=1,ycount=3
+[1.14-]texture:id=smithing_table_front
+[1.14-]texture:id=smithing_table_side
+[1.14-]texture:id=smithing_table_top
+[1.14-]texture:id=smithing_table_bottom
+[1.14-]texture:id=stonecutter_bottom
+[1.14-]texture:id=stonecutter_top
+[1.14-]texture:id=stonecutter_side
+[1.14-]texture:id=stonecutter_saw
+[1.14-]texture:id=campfire_log
+[1.14-]texture:id=campfire_log_lit
+[1.14-]texture:id=campfire_fire
+[1.14-]texture:id=bell_top
+[1.14-]texture:id=bell_side
+[1.14-]texture:id=bell_bottom
+
+# Signpost
+[1.14-]block:id=oak_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=oak_sign
+[1.14-]block:id=spruce_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=spruce_sign
+[1.14-]block:id=birch_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=birch_sign
+[1.14-]block:id=acacia_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=acacia_sign
+[1.14-]block:id=jungle_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=jungle_sign
+[1.14-]block:id=dark_oak_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=dark_oak_sign
+# Wall sign
+[1.14-]block:id=oak_wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=oak_sign
+[1.14-]block:id=spruce_wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=spruce_sign
+[1.14-]block:id=birch_wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=birch_sign
+[1.14-]block:id=acacia_wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=acacia_sign
+[1.14-]block:id=jungle_wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=jungle_sign
+[1.14-]block:id=dark_oak_wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=dark_oak_sign
+# Cornflower
+[1.14-]block:id=cornflower,patch0-1=0:cornflower,transparency=TRANSPARENT
+# Wither Rose
+[1.14-]block:id=wither_rose,patch0-1=0:wither_rose,transparency=TRANSPARENT
+# Lily of the valley
+[1.14-]block:id=lily_of_the_valley,patch0-1=0:lily_of_the_valley,transparency=TRANSPARENT
+# Potted cornflower
+[1.14-]block:id=potted_cornflower,patch0-5=0:flower_pot,patch6=0:dirt,patch7-8=0:cornflower,transparency=TRANSPARENT
+# Potted wither rose
+[1.14-]block:id=potted_wither_rose,patch0-5=0:flower_pot,patch6=0:dirt,patch7-8=0:wither_rose,transparency=TRANSPARENT
+# Potted lily of the valley
+[1.14-]block:id=potted_lily_of_the_valley,patch0-5=0:flower_pot,patch6=0:dirt,patch7-8=0:lily_of_the_valley,transparency=TRANSPARENT
+# Smooth Stone slab
+[1.14-]block:id=smooth_stone_slab,data=0,data=1,data=2,data=3,allsides=0:smooth_stone_slab_side,topbottom=0:smooth_stone,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=smooth_stone_slab,data=4,data=5,allsides=0:smooth_stone_slab_side,topbottom=0:smooth_stone,stdrot=true
+# Cut sandston slab
+[1.14-]block:id=cut_sandstone_slab,data=0,data=1,data=2,data=3,allsides=0:cut_sandstone,topbottom=0:sandstone_top,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=cut_sandstone_slab,data=4,data=5,allsides=0:cut_sandstone,topbottom=0:sandstone_top,stdrot=true
+# Cut red sandston slab
+[1.14-]block:id=cut_red_sandstone_slab,data=0,data=1,data=2,data=3,allsides=0:cut_red_sandstone,topbottom=0:red_sandstone_top,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=cut_red_sandstone_slab,data=4,data=5,allsides=0:cut_red_sandstone,topbottom=0:red_sandstone_top,stdrot=true
+# Bamboo Sapling
+[1.14-]block:id=bamboo_sapling,patch0-1=0:bamboo_stage0,transparency=TRANSPARENT
+# Bamboo
+[1.14-]block:id=bamboo,data=0-11,patch0-5=0:bamboo_stalk,transparency=TRANSPARENT
+# Potted bamboo
+[1.14-]block:id=potted_bamboo,patch0-5=0:flower_pot,patch6=0:dirt,patch7-8=0:bamboo_stage0,transparency=TRANSPARENT
+# Polished Granite Stairs
+[1.14-]block:id=polished_granite_stairs,patch0-2=0:polished_granite,transparency=SEMITRANSPARENT
+# Smooth red sandstone stairs
+[1.14-]block:id=smooth_red_sandstone_stairs,patch0-2=0:red_sandstone_top,transparency=SEMITRANSPARENT
+# Mossy stone brick stairs
+[1.14-]block:id=mossy_stone_brick_stairs,patch0-2=0:mossy_stone_bricks,transparency=SEMITRANSPARENT
+# Polished diorite stairs
+[1.14-]block:id=polished_diorite_stairs,patch0-2=0:polished_diorite,transparency=SEMITRANSPARENT
+# Mossy cobblestone stairs
+[1.14-]block:id=mossy_cobblestone_stairs,patch0-2=0:mossy_cobblestone,transparency=SEMITRANSPARENT
+# End stone brick stairs
+[1.14-]block:id=end_stone_brick_stairs,patch0-2=0:end_stone_bricks,transparency=SEMITRANSPARENT
+# Stone stairs
+[1.14-]block:id=stone_stairs,patch0-2=0:stone,transparency=SEMITRANSPARENT
+# Smooth sandstone stairs
+[1.14-]block:id=smooth_sandstone_stairs,patch0-2=0:sandstone_top,transparency=SEMITRANSPARENT
+# Smooth quartz stairs
+[1.14-]block:id=smooth_quartz_stairs,patch0-2=0:quartz_block_bottom,transparency=SEMITRANSPARENT
+# Granite stairs
+[1.14-]block:id=granite_stairs,patch0-2=0:granite,transparency=SEMITRANSPARENT
+# Andesite stairs
+[1.14-]block:id=andesite_stairs,patch0-2=0:andesite,transparency=SEMITRANSPARENT
+# Red nether brick stairs
+[1.14-]block:id=red_nether_brick_stairs,patch0-2=0:red_nether_bricks,transparency=SEMITRANSPARENT
+# Polished andesite stairs
+[1.14-]block:id=polished_andesite_stairs,patch0-2=0:polished_andesite,transparency=SEMITRANSPARENT
+# Diorite stairs
+[1.14-]block:id=diorite_stairs,patch0-2=0:diorite,transparency=SEMITRANSPARENT
+# Polished granite slab
+[1.14-]block:id=polished_granite_slab,data=0,data=1,data=2,data=3,allsides=0:polished_granite,topbottom=0:polished_granite,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=polished_granite_slab,data=4,data=5,allsides=0:polished_granite,topbottom=0:polished_granite,stdrot=true
+# Smooth red sandstone slab
+[1.14-]block:id=smooth_red_sandstone_slab,data=0,data=1,data=2,data=3,allsides=0:red_sandstone_top,topbottom=0:red_sandstone_top,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=smooth_red_sandstone_slab,data=4,data=5,allsides=0:red_sandstone_top,topbottom=0:red_sandstone_top,stdrot=true
+# Mossy stone brick slab
+[1.14-]block:id=mossy_stone_brick_slab,data=0,data=1,data=2,data=3,allsides=0:mossy_stone_bricks,topbottom=0:mossy_stone_bricks,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=mossy_stone_brick_slab,data=4,data=5,allsides=0:mossy_stone_bricks,topbottom=0:mossy_stone_bricks,stdrot=true
+# Polished diorite slab
+[1.14-]block:id=polished_diorite_slab,data=0,data=1,data=2,data=3,allsides=0:polished_diorite,topbottom=0:polished_diorite,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=polished_diorite_slab,data=4,data=5,allsides=0:polished_diorite,topbottom=0:polished_diorite,stdrot=true
+# Mossy cobblestone slab
+[1.14-]block:id=mossy_cobblestone_slab,data=0,data=1,data=2,data=3,allsides=0:mossy_cobblestone,topbottom=0:mossy_cobblestone,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=mossy_cobblestone_slab,data=4,data=5,allsides=0:mossy_cobblestone,topbottom=0:mossy_cobblestone,stdrot=true
+# End stone brick slab
+[1.14-]block:id=end_stone_brick_slab,data=0,data=1,data=2,data=3,allsides=0:end_stone_bricks,topbottom=0:end_stone_bricks,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=end_stone_brick_slab,data=4,data=5,allsides=0:end_stone_bricks,topbottom=0:end_stone_bricks,stdrot=true
+# Smooth sandstone slab
+[1.14-]block:id=smooth_sandstone_slab,data=0,data=1,data=2,data=3,allsides=0:sandstone_top,topbottom=0:sandstone_top,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=smooth_sandstone_slab,data=4,data=5,allsides=0:sandstone_top,topbottom=0:sandstone_top,stdrot=true
+# Smooth quartz slab
+[1.14-]block:id=smooth_quartz_slab,data=0,data=1,data=2,data=3,allsides=0:quartz_block_bottom,topbottom=0:quartz_block_bottom,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=smooth_quartz_slab,data=4,data=5,allsides=0:quartz_block_bottom,topbottom=0:quartz_block_bottom,stdrot=true
+# Granite slab
+[1.14-]block:id=granite_slab,data=0,data=1,data=2,data=3,allsides=0:granite,topbottom=0:granite,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=granite_slab,data=4,data=5,allsides=0:granite,topbottom=0:granite,stdrot=true
+# Andesite slab
+[1.14-]block:id=andesite_slab,data=0,data=1,data=2,data=3,allsides=0:andesite,topbottom=0:andesite,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=andesite_slab,data=4,data=5,allsides=0:andesite,topbottom=0:andesite,stdrot=true
+# Red nether brick slab
+[1.14-]block:id=red_nether_brick_slab,data=0,data=1,data=2,data=3,allsides=0:red_nether_bricks,topbottom=0:red_nether_bricks,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=red_nether_brick_slab,data=4,data=5,allsides=0:red_nether_bricks,topbottom=0:red_nether_bricks,stdrot=true
+# Polished andesite slab
+[1.14-]block:id=polished_andesite_slab,data=0,data=1,data=2,data=3,allsides=0:polished_andesite,topbottom=0:polished_andesite,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=polished_andesite_slab,data=4,data=5,allsides=0:polished_andesite,topbottom=0:polished_andesite,stdrot=true
+# Diorite slab
+[1.14-]block:id=diorite_slab,data=0,data=1,data=2,data=3,allsides=0:diorite,topbottom=0:diorite,stdrot=true,transparency=SEMITRANSPARENT
+[1.14-]block:id=diorite_slab,data=4,data=5,allsides=0:diorite,topbottom=0:diorite,stdrot=true
+# Brick wall
+[1.14-]block:id=brick_wall,patch0-2=0:bricks,transparency=TRANSPARENT
+# Prismarine wall
+[1.14-]block:id=prismarine_wall,patch0-2=0:prismarine,transparency=TRANSPARENT
+# Red sandstone wall
+[1.14-]block:id=red_sandstone_wall,patch0-2=0:red_sandstone,transparency=TRANSPARENT
+# Mossy stone brick wall
+[1.14-]block:id=mossy_stone_brick_wall,patch0-2=0:mossy_stone_bricks,transparency=TRANSPARENT
+# Granite wall
+[1.14-]block:id=granite_wall,patch0-2=0:granite,transparency=TRANSPARENT
+# Stone brick wall
+[1.14-]block:id=stone_brick_wall,patch0-2=0:stone_bricks,transparency=TRANSPARENT
+# Nether brick wall
+[1.14-]block:id=nether_brick_wall,patch0-2=0:nether_bricks,transparency=TRANSPARENT
+# Andesite wall
+[1.14-]block:id=andesite_wall,patch0-2=0:andesite,transparency=TRANSPARENT
+# Red nether brick wall
+[1.14-]block:id=red_nether_brick_wall,patch0-2=0:red_nether_bricks,transparency=TRANSPARENT
+# Sandstone wall
+[1.14-]block:id=sandstone_wall,patch0-2=0:sandstone,transparency=TRANSPARENT
+# End stone brick wall
+[1.14-]block:id=end_stone_brick_wall,patch0-2=0:end_stone_bricks,transparency=TRANSPARENT
+# Diorite wall
+[1.14-]block:id=diorite_wall,patch0-2=0:diorite,transparency=TRANSPARENT
+# Scaffolding
+[1.14-]block:id=scaffolding,patch0=0:scaffolding_top,patch1=0:scaffolding_side,patch2=0:scaffolding_bottom,transparency=TRANSPARENT
+# Composter
+[1.14-]block:id=composter,patch0=0:composter_top,patch1=0:composter_bottom,patch2=0:composter_side,patch3=0:composter_bottom,transparency=TRANSPARENT
+# Jigsaw
+[1.14-]block:id=jigsaw,patch0=0:jigsaw_bottom,patch1=0:jigsaw_top,patch2=0:jigsaw_side
+# Loom
+[1.14-]block:id=loom,patch0=0:loom_bottom,patch1=0:loom_top,patch2=0:loom_front,patch3=0:loom_side
+# Barrel
+[1.14-]block:id=barrel,data=0,data=2,data=4,data=6,data=8,data=10,patch0=0:barrel_bottom,patch1=0:barrel_top_open,patch2=0:barrel_side
+[1.14-]block:id=barrel,data=1,data=3,data=5,data=7,data=9,data=11,patch0=0:barrel_bottom,patch1=0:barrel_top,patch2=0:barrel_side
+# Smoker
+[1.14-]block:id=smoker,data=0,data=2,data=4,data=6,patch0=0:smoker_bottom,patch1=0:smoker_top,patch2=0:smoker_front_on,patch3=0:smoker_side
+[1.14-]block:id=smoker,data=1,data=3,data=5,data=7,patch0=0:smoker_bottom,patch1=0:smoker_top,patch2=0:smoker_front,patch3=0:smoker_side
+# Blast furnace
+[1.14-]block:id=blast_furnace,data=0,data=2,data=4,data=6,patch0=0:blast_furnace_top,patch1=0:blast_furnace_top,patch2=0:blast_furnace_front_on,patch3=0:blast_furnace_side
+[1.14-]block:id=blast_furnace,data=1,data=3,data=5,data=7,patch0=0:blast_furnace_top,patch1=0:blast_furnace_top,patch2=0:blast_furnace_front,patch3=0:blast_furnace_side
+# Cartography Table
+[1.14-]block:id=cartography_table,top=0:cartography_table_top,bottom=0:dark_oak_planks,east=0:cartography_table_side3,west=0:cartography_table_side1,north=0:cartography_table_side2,south=0:cartography_table_side3,stdrot=true
+# Fletching Table
+[1.14-]block:id=fletching_table,top=0:fletching_table_top,bottom=0:birch_planks,east=0:fletching_table_front,west=0:fletching_table_front,north=0:fletching_table_side,south=0:fletching_table_side,stdrot=true
+# Sweet berry bush
+[1.14-]block:id=sweet_berry_bush,data=0,patch0-1=0:sweet_berry_bush_stage0,transparency=TRANSPARENT
+[1.14-]block:id=sweet_berry_bush,data=1,patch0-1=0:sweet_berry_bush_stage1,transparency=TRANSPARENT
+[1.14-]block:id=sweet_berry_bush,data=2,patch0-1=0:sweet_berry_bush_stage2,transparency=TRANSPARENT
+[1.14-]block:id=sweet_berry_bush,data=3,patch0-1=0:sweet_berry_bush_stage3,transparency=TRANSPARENT
+# Grindstone
+[1.14-]block:id=grindstone,patch0=0:grindstone_pivot,patch1=0:grindstone_round,patch2=0:grindstone_side,patch4=0:dark_oak_log,transparency=TRANSPARENT
+# Lectern
+[1.14-]block:id=lectern,patch0=0:oak_planks,patch1=0:lectern_base,patch2=0:lectern_front,patch3=0:lectern_sides,patch4=0:lectern_top,transparency=TRANSPARENT
+# Lantern
+[1.14-]block:id=lantern,patch0=0:lantern,transparency=TRANSPARENT
+# Smithing table
+[1.14-]block:id=smithing_table,top=0:smithing_table_top,bottom=0:smithing_table_bottom,north=0:smithing_table_side,south=0:smithing_table_side,east=0:smithing_table_front,west=0:smithing_table_front,stdrot=true
+# Stonecutter
+[1.14-]block:id=stonecutter,patch0=0:stonecutter_bottom,patch1=0:stonecutter_top,patch2=0:stonecutter_side,patch3=0:stonecutter_saw,transparency=TRANSPARENT
+# Campfire
+[1.14-]block:id=campfire,patch0=0:campfire_log,patch1=0:campfire_log_lit,patch2=0:campfire_fire,transparency=TRANSPARENT
+# Bell
+[1.14-]block:id=bell,patch0=0:dark_oak_planks,patch1=0:stone,patch2=0:bell_top,patch3=0:bell_bottom,patch4=0:bell_side,transparency=TRANSPARENT

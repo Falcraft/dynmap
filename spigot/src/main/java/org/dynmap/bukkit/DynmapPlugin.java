@@ -250,13 +250,16 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
             else
                 return null;
         }
+        private boolean noservername = false;
         @Override
         public String getServerName() {
         	try {
-        		return getServer().getServerName();
+        		if (!noservername)
+        			return getServer().getServerName();
         	} catch (NoSuchMethodError x) {	// Missing in 1.14 spigot - no idea why removed...
-        		return getServer().getName();
+        		noservername = true;
         	}
+    		return getServer().getMotd();
         }
         @Override
         public boolean isPlayerBanned(String pid) {
@@ -746,6 +749,7 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
         BiomeMap.loadWellKnownByVersion(mcver);
         /* Find array of biomes in biomebase */
         Object[] biomelist = helper.getBiomeBaseList();
+        Log.verboseinfo("biomelist length = " + biomelist.length);
         /* Loop through list, skipping well known biomes */
         for(int i = 0; i < biomelist.length; i++) {
             Object bb = biomelist[i];
@@ -753,6 +757,8 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
                 float tmp = helper.getBiomeBaseTemperature(bb);
                 float hum = helper.getBiomeBaseHumidity(bb);
                 int watermult = helper.getBiomeBaseWaterMult(bb);
+                Log.verboseinfo("biome[" + i + "]: hum=" + hum + ", tmp=" + tmp + ", mult=" + Integer.toHexString(watermult));
+                
                 BiomeMap bmap = BiomeMap.byBiomeID(i);
                 if (bmap.isDefault()) {
                     String id =  helper.getBiomeBaseIDString(bb);
@@ -790,6 +796,12 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
     
     @Override
     public void onEnable() {
+        if(core != null){
+            if(core.getMarkerAPI() != null){
+                getLogger().info("Starting Scheduled Write Job (markerAPI).");
+                core.restartMarkerSaveJob();
+            }
+        }
         if (helper == null) {
             Log.info("Dynmap is disabled (unsupported platform)");
             return;
@@ -966,7 +978,10 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
         else {
             dsender = new BukkitCommandSender(sender);
         }
-        return core.processCommand(dsender, cmd.getName(), commandLabel, args);
+        if (core != null)
+        	return core.processCommand(dsender, cmd.getName(), commandLabel, args);
+        else
+        	return false;
     }
 
     
@@ -1608,5 +1623,12 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
     
     Polygon getWorldBorder(World w) {
         return helper.getWorldBorder(w);
+    }
+    
+    public static boolean migrateChunks() {
+        if ((plugin != null) && (plugin.core != null)) {
+            return plugin.core.migrateChunks();
+        }
+        return false;
     }
 }
